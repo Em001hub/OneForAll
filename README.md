@@ -75,10 +75,10 @@ DisasterUnified/
 - Interactive prediction maps
 
 ### 🎤 **VoiceSupport**
-- Speech-to-text emergency reporting
-- OpenAI Whisper integration
-- Multilingual support
-- Floating voice assistant
+- Speech-to-text emergency reporting using **OpenAI Whisper**
+- NO separate SPEECH_API_KEY needed - uses OpenAI API
+- Multilingual support (English, Hindi, auto-detect)
+- Floating voice assistant for hands-free emergency reporting
 
 ### 📄 **DisasterSencePages**
 - Emergency preparedness guides
@@ -89,9 +89,10 @@ DisasterUnified/
 ## 🔑 API Keys Required
 
 ### Essential APIs:
-- **Supabase**: Database & Authentication
-- **OpenAI**: AI predictions & voice support
-- **Weather API**: Real-time weather data
+- **Supabase**: Database & Authentication (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`)
+- **OpenAI**: AI predictions & Whisper speech-to-text (`VITE_OPENAI_API_KEY`)
+  - **Note**: NO separate SPEECH_API_KEY needed - Whisper is included in OpenAI API
+- **Weather API**: Real-time weather data (`VITE_WEATHER_API_KEY`)
 
 ### Optional APIs:
 - **Twitter**: Social media monitoring
